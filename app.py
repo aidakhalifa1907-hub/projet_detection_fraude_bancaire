@@ -794,11 +794,11 @@ with col_right:
             </div>
             """, unsafe_allow_html=True)
 
-        # Barres de probabilité
+        # Barres de probabilité — IMPORTANT : pas de lignes vides à l'intérieur
+        # (une ligne vide casse le parsing HTML de Streamlit/CommonMark)
         st.markdown(f"""
         <div class="proba-section">
             <div class="proba-title">Niveau de confiance du modèle</div>
-
             <div class="proba-row">
                 <span class="proba-label" style="color:#0a7a45;">Légitime</span>
                 <div class="proba-bar-container">
@@ -806,7 +806,6 @@ with col_right:
                 </div>
                 <span class="proba-pct" style="color:#0a7a45;">{proba_legit*100:.1f}%</span>
             </div>
-
             <div class="proba-row">
                 <span class="proba-label" style="color:#e31837;">Fraude</span>
                 <div class="proba-bar-container">
@@ -814,7 +813,6 @@ with col_right:
                 </div>
                 <span class="proba-pct" style="color:#e31837;">{proba_fraud*100:.1f}%</span>
             </div>
-
             <div style="margin-top:0.8rem; text-align:right;">
                 <span class="confidence-badge">🎯 Confiance : {confidence*100:.1f}%</span>
             </div>
