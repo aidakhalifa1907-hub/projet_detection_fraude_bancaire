@@ -1,6 +1,6 @@
 #  Détection de Transactions Bancaires Frauduleuses
 
-**Projet Module 5 Machine Learning — **   
+**Projet Module 5 Machine Learning  **   
 **Auteurs :**  KHALIFA AIDA & LAMIAA JAAFARI
 **Année académique :** 2025/2026
 
@@ -8,7 +8,7 @@
 
 ##  Application déployée
 
- **[Accéder à l'application Streamlit](https://VOTRE-LIEN-STREAMLIT.streamlit.app)**
+ **[[Accéder à l'application Streamlit](https://detection-fraude-ml-ak-lj.streamlit.app/)**
 
 
 ---
